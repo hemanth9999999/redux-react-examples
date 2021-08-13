@@ -10,8 +10,6 @@ const initState ={
     prev_charges : []
 }
 
-
-
 const reducer = (state=initState , action ) => { 
     switch ( action.type){ 
         case "ADD" : 
@@ -52,3 +50,5 @@ const nameReducer = (state ={name:"Max"}, action)=> {
 
     render( <Provider store={store}><App/></Provider>
     , window.document.getElementById('app') );
+
+    
